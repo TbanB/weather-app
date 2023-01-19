@@ -2,8 +2,11 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
     </button>
+    <!-- <span>TheWeatherApp</span> -->
+    <span>{{'demo.title' | translate}}</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
+    <button mat-icon-button class="example-icon" aria-label="Language button" (click)="onClickLang()">
+        <span>{{selectedLang}}</span>
+        <mat-icon>flag</mat-icon>
     </button>
 </mat-toolbar>
